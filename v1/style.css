@@ -1,0 +1,166 @@
+:root {
+  --color: black;
+  --color2: rgba(82, 236, 11, 0.815);
+  --radius: 0.35rem;
+  --border-width: 2px;
+  --color-bg: white;
+  --offset: 0.5rem;
+  --transition: 0.3s;
+}
+img {
+  width: 200px;
+  border-radius: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  text-align: center;
+  font-size: smaller;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.hello {
+  position: relative;
+  top: -0.5em;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+}
+p {
+  position: relative;
+  top: -0.5em;
+  font-size: 35px;
+  text-align: center;
+}
+.wave {
+  font-size: 40px;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+body {
+  background: linear-gradient(-45deg, #8e9aaf, #cbc0d3, #efd3d7, #dee2ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.socials {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+}
+button {
+  font-weight: 600;
+  border: solid var(--border-width) var(--color);
+  outline: 0;
+  padding: 1rem 4rem;
+  padding-bottom: 1em;
+  font-size: 1.5rem;
+  letter-spacing: 0.08rem;
+  background-color: var(--color-bg);
+  border-radius: var(--radius);
+  position: relative;
+  cursor: pointer;
+}
+.twitter:hover {
+  transform: scale(1.2);
+  background-color: #1da1f2;
+  color: white;
+}
+svg {
+  position: relative;
+  top: 0.12em;
+}
+.hackerrank:hover {
+  transform: scale(1.2);
+  background-color: #12eb5a;
+  color: white;
+}
+.hackerrank > img {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.github:hover {
+  transform: scale(1.2);
+  background-color: #6e5494;
+  color: white;
+}
+.github > svg {
+  width: 35px;
+  height: 35px;
+}
+.linkedin:hover {
+  transform: scale(1.2);
+  background-color: #0077b5;
+  color: white;
+}
+.linkedin > svg {
+  width: 35px;
+  height: 35px;
+}
+.abc {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  gap: 2px;
+}
+.hackerrank {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  gap: 2px;
+}
